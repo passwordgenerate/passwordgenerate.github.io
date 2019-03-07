@@ -1,0 +1,62 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+	background-image: url(../img/light_wool.png);
+}
+
+header {
+	height: 70px;
+	width: 100%;
+	background-image: url(../img/dark-honeycomb.png);
+}
+
+.logo {
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: contain;
+	height: 70px;
+	max-width: 310px;
+}
+
+.btn-get{
+	padding-bottom: 20px;
+}
+
+#password[type="text"] {
+	width: 300px;
+}
+
+.pw-length {
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.form-control {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.pw-option {
+	display: none;
+}
+
+.checkbox {
+	display: inline-block;
+}
+
+label {
+	font-weight: 500;
+	font-size: 12px;
+}
+
+input[type="text"] {
+	color: rgb(59, 59, 59);
+	font-weight: 550;
+}
+
+.input-group {
+	margin-top: 10px;
+}

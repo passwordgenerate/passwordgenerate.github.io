@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Welens generate password</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<div class="logo"></div>
+	</header>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-12">
+
+				<div class="pw-length">
+					Длина пароля (11)
+				</div>
+			</div>
+
+			<!-- /.col -->
+			<div class="col-12">
+				<input class="form-control" id="password-input" step="1" min="6" max="16" type="range" />
+			</div>
+
+			<div class="col-12">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="Цифры" id="number" class="check" checked />
+						Цифры
+					</label>
+				</div>
+			</div>
+
+			<div class="col-12">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="Заглавные" id="uppercase" class="check" checked />
+						Заглавные буквы
+					</label>
+				</div>
+			</div>
+
+			<div class="col-12">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="Прописные" id="lowercase" class="check" checked />
+						Строчные буквы
+					</label>
+				</div>
+			</div>
+
+			<div class="col-12">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="Цифры" id="symbols" class="check" />
+						Спецсимволы
+					</label>
+				</div>
+			</div>
+			<!-- /.col -->
+			<!-- /.col -->
+			<div class="col-12">
+				<div class="btn-get">
+					<button class="get-password">Получить пароль</button>
+					<button class="delete">Очистить</button>
+				</div>
+			</div>
+
+			<!-- /.col -->
+			<div class="col-12">
+				<input id="password" type="text" value="Ваш пароль">
+				<span class="input-group-button">
+					<button class="btn" type="button" data-clipboard-demo data-clipboard-target="#password">
+						Скопировать
+					</button>
+				</span>
+				<div class="security"></div>
+			</div>
+			<!-- /.col -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+
+
+
+
+
+	<footer>
+
+	</footer>
+	<script src="js/common.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+	<script>
+		new ClipboardJS('.btn');
+	</script>
+</body>
+
+</html>
